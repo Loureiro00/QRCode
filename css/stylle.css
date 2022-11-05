@@ -56,6 +56,11 @@ header p{
     font-size: medium;
     background-color: black
 }
-.qr-code{
+.wrapper  .qr-code{
+    display: flex;
     padding: 0 78px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
 }
