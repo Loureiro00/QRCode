@@ -56,3 +56,6 @@ header p{
     font-size: medium;
     background-color: black
 }
+.qr-code{
+    padding: 0 78px;
+}
