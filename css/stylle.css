@@ -18,10 +18,16 @@ body{
     background-color: #75e2ff;
 }
 .wrapper{
+    
+    height: 250px;
     background-color: #eaebed;
     max-width: 400px;
     border-radius: 15px;
     padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+.wrapper.active{
+    height: 530px;
 }
 header h1{
     font-size: 40px;
@@ -58,9 +64,17 @@ header p{
 }
 .wrapper  .qr-code{
     display: flex;
-    padding: 0 78px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0 ;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
     border: 2px solid #ccc;
+}
+
+.wrapper.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
 }
